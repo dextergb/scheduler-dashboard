@@ -5,7 +5,7 @@ import Loading from "components/Loading";
 
 class Dashboard extends Component {
   state = {
-    loading: true,
+    loading: false,
   };
 
   render() {
