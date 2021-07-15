@@ -33,6 +33,12 @@ class Dashboard extends Component {
     focused: null,
   };
 
+  selectPanel(id) {
+    this.setState({
+      focused: id,
+    });
+  }
+
   render() {
     const dashboardClasses = classnames("dashboard", {
       "dashboard--focused": this.state.focused,
