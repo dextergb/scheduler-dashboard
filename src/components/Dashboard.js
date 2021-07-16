@@ -61,6 +61,7 @@ class Dashboard extends Component {
         interviewers: interviewers.data,
       });
     });
+    this.socket = new WebSocket(process.env.REACT_APP_WEBSOCKET_URL);
   }
 
   componentDidUpdate(previousProps, previousState) {
