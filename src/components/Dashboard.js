@@ -4,6 +4,12 @@ import axios from "axios";
 import classnames from "classnames";
 import Loading from "components/Loading";
 import Panel from "components/Panel";
+import {
+  getTotalInterviews,
+  getLeastPopularTimeSlot,
+  getMostPopularDay,
+  getInterviewsPerDay,
+} from "helpers/selectors";
 
 const data = [
   {
